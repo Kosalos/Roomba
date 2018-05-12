@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad12_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Roomba" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ZlB-KM-vQa"/>
+                        <viewControllerLayoutGuide type="bottom" id="xdb-Ez-sVB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="Background" customModule="Roomba" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wNM-aC-Uzp" customClass="RoombaView" customModule="Roomba" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="1294"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="05K-IA-U7J">
+                                <rect key="frame" x="965" y="1316" width="39" height="30"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Reset">
+                                    <color key="titleColor" red="0.026815088465809822" green="0.051707625389099121" blue="0.051311589777469635" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="resetPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wjj-4L-8VA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RjJ-R7-tI3">
+                                <rect key="frame" x="20" y="1316" width="71" height="30"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Add Room">
+                                    <color key="titleColor" red="0.026815088465809822" green="0.051707625389099121" blue="0.051311589777469635" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="addRoomPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5ky-XY-62h"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sVJ-an-vlY">
+                                <rect key="frame" x="132" y="1316" width="34" height="30"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleColor" red="0.026815088465809822" green="0.051707625389099121" blue="0.051311589777469635" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="startPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WNo-lN-zQe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UD4-Og-wFh">
+                                <rect key="frame" x="220" y="1316" width="39" height="30"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Spiral">
+                                    <color key="titleColor" red="0.026815088465809822" green="0.051707625389099121" blue="0.051311589777469635" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="spiralButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1b8-Tj-X0e"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K5h-BP-DzJ">
+                                <rect key="frame" x="292" y="1316" width="49" height="30"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Square">
+                                    <color key="titleColor" red="0.026815088470000002" green="0.051707625389999998" blue="0.05131158978" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="squareButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bjm-2Q-oib"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="K5h-BP-DzJ" firstAttribute="leading" secondItem="UD4-Og-wFh" secondAttribute="trailing" constant="33" id="2gp-79-0US"/>
+                            <constraint firstItem="05K-IA-U7J" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" symbolic="YES" id="2ke-gR-8Vb"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="K5h-BP-DzJ" secondAttribute="trailing" constant="20" symbolic="YES" id="2uJ-dX-RYF"/>
+                            <constraint firstItem="sVJ-an-vlY" firstAttribute="top" secondItem="wNM-aC-Uzp" secondAttribute="bottom" constant="22" id="8AE-oa-NZt"/>
+                            <constraint firstAttribute="trailing" secondItem="wNM-aC-Uzp" secondAttribute="trailing" id="UMS-nb-498"/>
+                            <constraint firstItem="K5h-BP-DzJ" firstAttribute="top" secondItem="wNM-aC-Uzp" secondAttribute="bottom" constant="22" id="Ubr-DN-8Ns"/>
+                            <constraint firstItem="RjJ-R7-tI3" firstAttribute="top" secondItem="wNM-aC-Uzp" secondAttribute="bottom" constant="22" id="WfZ-an-MCU"/>
+                            <constraint firstItem="RjJ-R7-tI3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="X7t-Lt-rkC"/>
+                            <constraint firstItem="UD4-Og-wFh" firstAttribute="leading" secondItem="sVJ-an-vlY" secondAttribute="trailing" constant="54" id="Xec-aZ-4DV"/>
+                            <constraint firstItem="wNM-aC-Uzp" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="fU2-6f-Z03"/>
+                            <constraint firstItem="05K-IA-U7J" firstAttribute="top" secondItem="wNM-aC-Uzp" secondAttribute="bottom" constant="22" id="hdo-ed-yFG"/>
+                            <constraint firstItem="05K-IA-U7J" firstAttribute="top" secondItem="wNM-aC-Uzp" secondAttribute="bottom" constant="22" id="j5J-rJ-iHK"/>
+                            <constraint firstItem="wNM-aC-Uzp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="jcm-pu-Mh8"/>
+                            <constraint firstAttribute="bottom" secondItem="wNM-aC-Uzp" secondAttribute="bottom" constant="72" id="nEh-Xj-IY3"/>
+                            <constraint firstItem="UD4-Og-wFh" firstAttribute="top" secondItem="wNM-aC-Uzp" secondAttribute="bottom" constant="22" id="oCD-lG-W5L"/>
+                            <constraint firstItem="sVJ-an-vlY" firstAttribute="leading" secondItem="RjJ-R7-tI3" secondAttribute="trailing" constant="41" id="uzx-gA-uqh"/>
+                            <constraint firstAttribute="trailing" secondItem="05K-IA-U7J" secondAttribute="trailing" constant="20" id="zre-Yi-cCU"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-416" y="55"/>
+        </scene>
+    </scenes>
+</document>
